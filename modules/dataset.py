@@ -57,8 +57,8 @@ class Dataset:
         plt.show()
 
     @property
-    def ds_info(self):
-        return self.__ds_info
+    def ds_num_classes(self):
+        return self.__ds_info.features['super_class_id'].num_classes
 
     @property
     def train_ds(self):
